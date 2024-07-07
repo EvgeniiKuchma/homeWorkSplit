@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace homeWorkSplit
 {
@@ -14,9 +10,9 @@ namespace homeWorkSplit
                 "получить массив слов, которые разделены пробелом в тексте и " +
                 "вывести массив, каждое слово с новой строки.";
 
-            char[] separator = new char[] { ',', ' ', '.' };
+            char[] separatores = new char[] { ',', ' ', '.' };
 
-            string[] subString = textInString.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            string[] subString = textInString.Split(separatores, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var word in subString)
             {
